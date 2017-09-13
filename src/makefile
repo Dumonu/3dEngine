@@ -1,4 +1,4 @@
 SUBDIRS = geo
-OBS =
+OBS = debug.o
 
 include ../makefile.inc

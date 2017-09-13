@@ -6,7 +6,7 @@ class Vector
     public:
         double tuple[3]; //(x, y, z)
 
-        Vector(double x, double y, double z);
+        Vector(double x = 0, double y = 0, double z = 0);
 
         Vector operator+(Vector V);
         Vector operator-(Vector V);

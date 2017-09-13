@@ -8,7 +8,7 @@ class Point
 public:
     double tuple[3]; //(x,y,z)
 
-    Point(double x, double y, double z);
+    Point(double x = 0, double y = 0, double z = 0);
 
     Point operator+(Vector V);
     Point operator-(Vector V);

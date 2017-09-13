@@ -1,6 +1,6 @@
 GCC = g++
 WORKDIR = `git rev-parse --show-toplevel`
-CFLAGS = -std=c++11 -g -fopenmp `sdl2-config --cflags --libs`
+CFLAGS = -std=c++11 -g `sdl2-config --cflags --libs`
 OBJ_DIR = $(WORKDIR)/build
 
 %.o: %.cpp
