@@ -2,8 +2,9 @@
 #define POINT_H_
 
 #include "vector.h"
+#include "geometry.h"
 
-class Point
+class Point : Geometry
 {
 public:
     double tuple[3]; //(x,y,z)

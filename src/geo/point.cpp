@@ -1,4 +1,6 @@
 #include <cstdio>
+#include <SDL_video.h>
+#include "../global.h"
 #include "point.h"
 
 Point::Point(double x, double y, double z)
@@ -28,5 +30,11 @@ Vector Point::operator-(Point P)
 
 void Point::draw()
 {
-    std::printf("(%lf, %lf, %lf)\n", tuple[0], tuple[1], tuple[2]);
+    int x, y;
+    int winWidth;
+    int winHeight;
+    SDL_GetWindowSize(win, &winWidth, &winHeight);
+    x = (winWidth / 2) + (tuple[0]);
+    y = (winHeight / 2) + (tuple[1]);
+    SDL_RenderDrawPoint(renderer, x, y);
 }
